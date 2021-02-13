@@ -12,15 +12,24 @@
       <img class="c-main-header__logo"
         src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png"
         alt="platzi-video">
-      <div class="c-main-header__buttons">
-        <ul class="c-horizontal-list">
-          <li class="c-horizontal-list__item">
-            <a class="c-link" href="">Cuenta</a>
-          </li>
-          <li class="c-horizontal-list__item">
-            <a class="c-link" href="">Cerrar Sesión</a>
-          </li>
-        </ul>
+      <div class="c-main-header__actions">
+        <div class="overflow-menu">
+          <button type="button" class="c-button">
+            <div class="u-align-center">
+              <span class="material-icons">person</span> Perfil
+            </div>
+          </button>
+          <div class="overflow-menu__content" id="over-flow">
+            <ul class="u-list u-list--vertical">
+              <li>
+                <a class="c-link" href="">Cuenta</a>
+              </li>
+              <li>
+                <a class="c-link" href="">Cerrar Sesión</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>

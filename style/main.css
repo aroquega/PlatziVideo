@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 *, *::after, *::before {
     margin: 0;
@@ -8,9 +9,13 @@
 
 :root {
     --primary-color: #DB3069;
+    --primary-color-dark: #c21750;
+    --primary-color-light: #f54e86;
     --seconday-color: #F5D547;
     --light-color: #EBEBD3;
     --dark-color: #3C3C3B;
+    --box-shadow: 0 5px 10px rgba(0.5, 0.5, 0.5, 0.2);
+    --md-font-size: 1.8rem;
 }
 
 html {
@@ -26,6 +31,11 @@ html {
     box-shadow: 0 5px 10px rgba(0.5, 0.5, 0.5, 0.2);
 }
 
+.u-align-center {
+    display: flex;
+    align-items: center;
+}
+
 .c-main-header {
     display: flex;
     justify-content: space-between;
@@ -36,22 +46,70 @@ html {
     font-size: 1.8rem;
     background-color: var(--primary-color);
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.c-button {
+    user-select: none;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font: inherit;
+    background-color: transparent;
+    color: var(--light-color);
 }
 
 .c-main-header__logo {
     height: 100%;
 }
 
-.c-horizontal-list {
-    list-style-type: none;
+.u-list {
     display: flex;
+    list-style-type: none;
 }
 
-.c-horizontal-list__item {
-    margin: 10px;
+.u-list--horizontal {
+    flex-flow: row nowrap;
 }
 
-.c-link {
-    color: var(--light-color);
+.u-list--vertical {
+    flex-flow: column nowrap;
+}
+
+.c-link, .c-link:link {
+    display: block;
+    padding: 10px;
     text-decoration: none;
+    color: var(--light-color);
+}
+
+/*
+
+Overflow Menu
+
+*/
+
+.overflow-menu {
+    position: relative;
+    height: auto;
+}
+
+.overflow-menu__content {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    bottom: 0;
+    min-width: 170px;
+    background-color: var(--dark-color);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: bottom 0.2s ease-in-out;
+}
+
+.overflow-menu:hover>.overflow-menu__content {
+    bottom: initial;
+}
+
+.material-icons.md {
+    font-size: 4rem;
 }
