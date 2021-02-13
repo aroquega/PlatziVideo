@@ -16,6 +16,7 @@
     --dark-color: #3C3C3B;
     --box-shadow: 0 5px 10px rgba(0.5, 0.5, 0.5, 0.2);
     --md-font-size: 1.8rem;
+    --font: 1.8rem 'Raleway', sans-serif;
 }
 
 html {
@@ -59,6 +60,10 @@ html {
     color: var(--light-color);
 }
 
+.c-button:focus{
+    background-color: var(--primary-color-dark);
+}
+
 .c-main-header__logo {
     height: 100%;
 }
@@ -81,6 +86,11 @@ html {
     padding: 10px;
     text-decoration: none;
     color: var(--light-color);
+}
+
+.c-link:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 
 /*
@@ -112,4 +122,40 @@ Overflow Menu
 
 .material-icons.md {
     font-size: 4rem;
+}
+
+.c-main-title {
+    margin: 10px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.c-text-field {
+    display: flex;
+    width: 70%;
+    margin: 10px;
+}
+
+.c-text-field__input {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    font: var(--font);
+    background-color: white;
+    color: var(--primary-color-dark);
+    border-radius: 8px 0 0 8px;
+    appearance: none;
+    outline: none;
+}
+
+.c-text-field__input::placeholder {
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+.c-text-field__trailing-content {
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 0 8px 8px 0;
 }
