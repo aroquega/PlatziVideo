@@ -13,7 +13,9 @@
   --primary-color: #db3069;
   --primary-color-dark: #c21750;
   --primary-color-light: #f54e86;
-  --seconday-color: #f5d547;
+  --secondary-color: #f5d547;
+  --secondary-color-dark: #ffd20a;
+  --secondary-color-light: #f1dc7e;
   --light-color: #ebebd3;
   --off-white: #fcfcf5;
   --dark-color: #3c3c3b;
@@ -40,7 +42,7 @@ html {
 }
 
 .t-text-color-secondary {
-  color: var(--seconday-color);
+  color: var(--secondary-color);
 }
 
 .t-text-light {
@@ -57,11 +59,11 @@ html {
 }
 
 .normal-link:link {
-  color: initial;
+  color: var(--secondary-color-light);
 }
 
 .normal-link:visited {
-  color: var(--seconday-color);
+  color: var(--secondary-color-dark);
 }
 
 .c-main-header {
@@ -259,7 +261,7 @@ Overflow Menu
 }
 
 .material-icons--rounded {
-  background: var(--seconday-color);
+  background: var(--secondary-color);
   border-radius: 50%;
   padding: 5px;
   color: var(--dark-color);
@@ -268,7 +270,7 @@ Overflow Menu
 .overflow-vertical {
   overflow-y: scroll;
   scrollbar-width: thin;
-  scrollbar-color: var(--seconday-color) transparent;
+  scrollbar-color: var(--secondary-color) transparent;
 }
 
 .overflow-vertical::-webkit-scrollbar {
@@ -276,7 +278,7 @@ Overflow Menu
 }
 
 .overflow-vertical::-webkit-scrollbar-thumb {
-  background-color: var(--seconday-color);
+  background-color: var(--secondary-color);
 }
 
 .overflow-vertical::-webkit-scrollbar-track {
