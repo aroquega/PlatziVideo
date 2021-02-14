@@ -245,7 +245,6 @@ Overflow Menu
   bottom: 0;
   top: 100%;
   padding: 10px;
-  overflow: hidden;
   background-color: rgba(0.5, 0.5, 0.5, 0.5);
   color: var(--light-color);
   transition: top 200ms ease-in-out;
@@ -264,4 +263,22 @@ Overflow Menu
   border-radius: 50%;
   padding: 5px;
   color: var(--dark-color);
+}
+
+.overflow-vertical {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--seconday-color) transparent;
+}
+
+.overflow-vertical::-webkit-scrollbar {
+  width: 2px;
+}
+
+.overflow-vertical::-webkit-scrollbar-thumb {
+  background-color: var(--seconday-color);
+}
+
+.overflow-vertical::-webkit-scrollbar-track {
+  background-color: transparent;
 }
