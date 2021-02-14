@@ -199,9 +199,18 @@ Overflow Menu
   overflow: hidden;
 }
 
-.card:focus {
+.card:focus, .card:focus-within {
   transform: translateY(-5px);
   box-shadow: 0 10px 10px rgba(0.5, 0.5, 0.5, 0.2);
+}
+
+.card:focus .card__image, .card:focus-within .card__image {
+  filter: brightness(0.5);
+  transform: scale(1.1);
+}
+
+.card:focus .card__details, .card:focus-within .card__details {
+  top: 0;
 }
 
 .card__image {
@@ -210,11 +219,6 @@ Overflow Menu
   object-fit: cover;
   object-position: center;
   transition: all 200ms ease-out;
-}
-
-.card:focus .card__image {
-  filter: brightness(0.5);
-  transform: scale(1.1);
 }
 
 .card__details {
@@ -229,10 +233,6 @@ Overflow Menu
   color: var(--light-color);
   transition: top 200ms ease-in-out;
   opacity: 0.9;
-}
-
-.card:focus .card__details {
-  top: 0;
 }
 
 .material-icons--rounded {
