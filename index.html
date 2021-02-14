@@ -1,58 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platzi-video</title>
-    <link rel="stylesheet" href="style/main.css">
-  </head>
-  <body>
-    <header class="c-main-header u-elevated">
-      <img class="c-main-header__logo"
-        src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png"
-        alt="platzi-video">
-      <div class="c-main-header__actions">
-        <div class="overflow-menu">
-          <button type="button" class="c-button">
-            <div class="u-align-center">
-              <span class="material-icons">person</span> Perfil
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platzi-video</title>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+  <header class="c-main-header u-elevated">
+    <img class="c-main-header__logo"
+      src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png"
+      alt="platzi-video">
+    <div class="c-main-header__actions">
+      <div class="overflow-menu">
+        <button type="button" class="c-button">
+          <div class="u-align-center">
+            <span class="material-icons">person</span> Perfil
+          </div>
+        </button>
+        <div class="overflow-menu__content" id="over-flow">
+          <ul class="u-list u-list--vertical">
+            <li>
+              <a class="c-link" href="">Cuenta</a>
+            </li>
+            <li>
+              <a class="c-link" href="">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h1 class="c-main-title">¿Qué quieres buscar hoy?</h1>
+      <form>
+        <div class="c-text-field">
+          <input class="c-text-field__input" placeholder="Buscar">
+          <div class="c-text-field__trailing-content">
+            <button type="submit" class="c-button">
+              <span class="material-icons">search</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2>Peliculas para la familia</h2>
+      <div class="carousel">
+        <div class="carousel__container">
+          <div class="carousel__item">
+            <div class="card" tabindex="0">
+              <img class="card__image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Komarek-pk016523.jpg/600px-Komarek-pk016523.jpg">
+              <div class="card__details">
+                <h3>Yo, Chispita</h3>
+                <p>
+                  Chispita es un perro que cansado de ser tratado como inferior, busca en la música su oportunidad para
+                  demostrar que es su talento es tan grande como un gran danés.
+                </p>
+                <p>
+                  Imagen de Paul Komarek bajo la <a
+                    href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">creative commons</a>
+                </p>
+              </div>
             </div>
-          </button>
-          <div class="overflow-menu__content" id="over-flow">
-            <ul class="u-list u-list--vertical">
-              <li>
-                <a class="c-link" href="">Cuenta</a>
-              </li>
-              <li>
-                <a class="c-link" href="">Cerrar Sesión</a>
-              </li>
-            </ul>
+          </div>
+          <div class="carousel__item">
+            <div class="card" tabindex="0">
+              <img class="card__image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Chess_piece_-_Black_bishop.JPG/343px-Chess_piece_-_Black_bishop.JPG">
+              <div class="card__details">
+                <h3>Gambito de Alfil</h3>
+                <p>
+                  Un ex-francotirador descubre que su pasión es el ajedrez y su pieza favorita es el alfil por su
+                  capacidad de matar desde lejos.
+                </p>
+                <p>
+                  Imagen de <a href="https://commons.wikimedia.org/wiki/User:MichaelMaggs">Michael Maggs</a> bajo
+                  <a href="https://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="card" tabindex="0">
+              <img class="card__image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/A_mug_of_Tenom_coffee.jpg/800px-A_mug_of_Tenom_coffee.jpg"
+                alt="Amores Oso">
+              <div class="card__details">
+                <h3>Hola, cruel mundo</h3>
+                <p>
+                  Una joven decide volverse programadora, sin saber que la programación tiene más que ver con
+                  desvelarse, mantener código legado, y no saber por qué funcionan las cosas que con programar.
+                </p>
+                <p>
+                  Imagen de <a href="https://commons.wikimedia.org/wiki/User:Night_Lantern">Night Lantern</a> bajo <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section>
-        <h1 class="c-main-title">¿Qué quieres buscar hoy?</h1>
-        <form>
-          <div class="c-text-field">
-            <input class="c-text-field__input" placeholder="Buscar">
-            <div class="c-text-field__trailing-content">
-              <button type="submit" class="c-button">
-                <span class="material-icons">search</span>
-              </button>
-            </div>
-          </div>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <ul>
-        <li><a href="">Contáctanos</a></li>
-        <li><a href="">Política de Privacidad</a></li>
-        <li><a href="">Términos y Condiciones</a></li>
-      </ul>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="">Contáctanos</a></li>
+      <li><a href="">Política de Privacidad</a></li>
+      <li><a href="">Términos y Condiciones</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>
