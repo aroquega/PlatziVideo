@@ -29,6 +29,20 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+.t-text-big-size {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.t-text-medium-size {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.t-text-color-secondary {
+  color: var(--seconday-color);
+}
+
 .t-text-light {
   color: var(--light-color);
 }
@@ -40,6 +54,14 @@ html {
 .u-align-center {
   display: flex;
   align-items: center;
+}
+
+.normal-link:link {
+  color: initial;
+}
+
+.normal-link:visited {
+  color: var(--seconday-color);
 }
 
 .c-main-header {
