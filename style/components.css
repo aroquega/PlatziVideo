@@ -10,8 +10,16 @@
     color: var(--link-color);
 }
 
+.link--primary:link {
+    color: var(--primary-brand-color);
+}
+
 .link:visited {
     color: var(--link-visited-color);
+}
+
+.link--primary:visited {
+    color: var(--primary-brand-color);
 }
 
 /*
@@ -58,7 +66,28 @@ Text Field Component
 
 .checkbox {
     margin: 20px 0;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__input {
+    position: relative;
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    margin-left: 5px;
+    color: var(--primary-brand-color);
+}
+
+.checkbox__input::before {
+    content: "check_box";
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.checkbox__input:checked::before {
+    content: "check_box_outline_blank";
 }
 
 /*
@@ -66,10 +95,8 @@ Form
 */
 
 .form {
-    max-width: 550px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 490px;
+    margin: 20px auto;
     background-color: white;
     padding: 30px 10px;
     border-radius: var(--border-radius);
@@ -134,5 +161,23 @@ Icons
 }
 
 .thematic-break {
+    border: none;
     border-top: 1px solid var(--dark-color);
+}
+
+/*
+Flex
+*/
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex--align-center {
+    align-items: center;
+}
+
+.flex--space-between {
+    justify-content: space-between;
 }
