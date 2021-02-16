@@ -13,3 +13,46 @@
 .link:visited {
     color: var(--link-visited-color);
 }
+
+/*
+Text Field Component
+*/
+
+.text-field {
+    position: relative;
+    margin: 20px 0;
+    font-size: 14px;
+    height: 60px;
+}
+
+.text-field__label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 5px;
+    transform: translate(0, -50%);
+    background-color: white;
+}
+
+.text-field__input {
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    color: var(--input-color);
+}
+
+.text-field__input:focus {
+    border-color: var(--input-focus-border-color);
+    border-width: 2px;
+}
+
+.text-field__input:focus + .text-field__label {
+    color: var(--label-focus-color);
+}
+
+.checkbox {
+    font-size: 20px;
+}
