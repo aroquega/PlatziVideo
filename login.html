@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión para PlatziVideo</title>
+    <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/theme.css">
     <link rel="stylesheet" href="style/layout.css">
     <link rel="stylesheet" href="/style/components.css">
@@ -15,23 +16,23 @@
     <main class="main-content">
         <form>
             <h1>Inicio de Sesión</h1>
-            <div>
-                <label>Correo</label>
-                <input type="text">
+            <div class="text-field">
+                <input id="correo" class="text-field__input" type="text">
+                <label for="correo" class="text-field__label">Correo</label>
             </div>
-            <div>
-                <label>Contraseña</label>
-                <input type="password">
+            <div class="text-field">
+                <input class="text-field__input" type="password">
+                <label class="text-field__label">Contraseña</label>
             </div>
-            <div>
-                <label>Recuérdamen</label>
-                <input type="checkbox">
+            <div class="checkbox">
+                <label class="checkbox__label">Recuérdame</label>
+                <input class="checkbox__input" type="checkbox">
             </div>
-            <a>Olvidé mi contraseña</a>
-            <div>
+            <a class="link" href="/">Olvidé mi contraseña</a>
+            <section aria-label="Iniciar sesión con otras cuentas">
                 <button>Iniciar sesión con Google</button>
                 <button>Iniciar sesión con Twitter</button>
-            </div>
+            </section>
             <div>
                 No tienes ninguna cuenta. <a>Regístrate</a>
             </div>
