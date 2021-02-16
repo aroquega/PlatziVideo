@@ -27,16 +27,15 @@ Text Field Component
 
 .text-field__label {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 10px;
-    padding: 5px;
-    transform: translate(0, -50%);
-    background-color: white;
 }
 
 .text-field__input {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
+    padding-bottom: 0px;
+    height: 100%;
     outline: none;
     font-size: 18px;
     border: 1px solid var(--input-border-color);
@@ -49,10 +48,26 @@ Text Field Component
     border-width: 2px;
 }
 
+.text-field:invalid {
+    border-color: red;
+}
+
 .text-field__input:focus + .text-field__label {
     color: var(--label-focus-color);
 }
 
 .checkbox {
     font-size: 20px;
+}
+
+/*
+Form
+*/
+
+.form {
+    margin-top: 50px;
+    background-color: rgba(0.2, 0.2, 0.2, 0.3);
+    padding: 30px 10px;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(5px);
 }
