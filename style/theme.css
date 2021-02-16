@@ -29,6 +29,9 @@
     --input-bg-color: var(--light-color);
     --label-focus-color: var(--primary-brand-color);
     --main-color: var(--light-color);
+    --button-bg-color: white;
+    --button-border-color: var(--primary-brand-color);
+    --button-color: var(--primary-brand-color);
 
     --medium-shadow: 0 2.5px 10px var(--shadow-color);
     --border-radius: 4px;
