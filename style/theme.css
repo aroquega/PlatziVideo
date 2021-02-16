@@ -23,6 +23,12 @@
     --link-color: var(--secondary-brand-color);
     --link-visited-color: var(--secondary-color-dark);
     --shadow-color: var(--transparent-black);
+    --input-border-color: var(--dark-color);
+    --input-color: var(--dark-color);
+    --input-focus-border-color: var(--primary-brand-color);
+    --input-bg-color: var(--light-color);
+    --label-focus-color: var(--primary-brand-color);
 
     --medium-shadow: 0 2.5px 10px var(--shadow-color);
+    --border-radius: 4px;
 }
