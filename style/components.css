@@ -57,6 +57,7 @@ Text Field Component
 }
 
 .checkbox {
+    margin: 20px 0;
     font-size: 20px;
 }
 
@@ -65,7 +66,10 @@ Form
 */
 
 .form {
+    max-width: 550px;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     padding: 30px 10px;
     border-radius: var(--border-radius);
