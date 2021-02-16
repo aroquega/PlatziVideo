@@ -66,8 +66,12 @@ Form
 
 .form {
     margin-top: 50px;
-    background-color: rgba(0.2, 0.2, 0.2, 0.3);
+    background-color: white;
     padding: 30px 10px;
     border-radius: var(--border-radius);
-    backdrop-filter: blur(5px);
+    box-shadow: var(--medium-shadow);
+}
+
+.centered-text {
+    text-align: center;
 }

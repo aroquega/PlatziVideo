@@ -28,6 +28,7 @@
     --input-focus-border-color: var(--primary-brand-color);
     --input-bg-color: var(--light-color);
     --label-focus-color: var(--primary-brand-color);
+    --main-color: var(--light-color);
 
     --medium-shadow: 0 2.5px 10px var(--shadow-color);
     --border-radius: 4px;
