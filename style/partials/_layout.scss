@@ -1,3 +1,5 @@
+@use 'components/main-header';
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -19,14 +21,6 @@ html {
         "footer" auto / 1fr;
 }
 
-.main-header {
-    grid-area: header;
-    min-height: 80px;
-    max-height: 100px;
-    background-color: var(--header-bg);
-    box-shadow: var(--medium-shadow);
-}
-
 .main-content {
     grid-area: main;
     padding: 20px;
@@ -37,6 +31,8 @@ html {
     grid-area: footer;
     padding: 20px;
     min-height: 100px;
+    height: fit-content;
+    height: -moz-fit-content;
     background-color: var(--footer-bg);
     color: var(--footer-color);
 }

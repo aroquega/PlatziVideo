@@ -1,0 +1,19 @@
+/*
+Main Header Component
+*/
+
+.main-header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    max-height: 100px;
+    padding: 10px;
+    background-color: var(--header-bg);
+    box-shadow: var(--medium-shadow);
+}
+
+.main-header__logo {
+    height: 100%;
+}
