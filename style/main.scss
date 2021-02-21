@@ -1,3 +1,14 @@
 @use 'partials/base';
 @use 'partials/layout';
 @use 'partials/theme';
+
+// Components 
+@use 'partials/components/overflow-menu';
+@use 'partials/components/button';
+@use 'partials/components/link';
+@use 'partials/components/list';
+@use 'partials/components/carousel';
+@use 'partials/components/card';
+@use 'partials/components/text';
+@use 'partials/components/form';
+@use 'partials/components/flex';
