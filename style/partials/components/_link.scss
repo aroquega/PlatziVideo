@@ -1,0 +1,20 @@
+.link {
+    padding: 20px;
+}
+
+.link,
+.link:link {
+    color: var(--link-color);
+}
+
+.link--primary:link {
+    color: var(--primary-brand-color);
+}
+
+.link:visited {
+    color: var(--link-visited-color);
+}
+
+.link--primary:visited {
+    color: var(--primary-brand-color);
+}

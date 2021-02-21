@@ -1,0 +1,16 @@
+.button {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font: inherit;
+    background-color: transparent;
+    color: var(--light-color);
+  }
+  
+  .button:focus {
+    background-color: var(--primary-color-dark);
+  }
