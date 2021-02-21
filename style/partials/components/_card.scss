@@ -1,0 +1,49 @@
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    background: white;
+    box-shadow: var(--box-shadow);
+    outline: none;
+    overflow: hidden;
+    transition: all 200ms;
+  }
+  
+  .card:focus,
+  .card:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px rgba(0.5, 0.5, 0.5, 0.2);
+  }
+  
+  .card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .card__details {
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    color: var(--light-color);
+    backdrop-filter: blur(10px) brightness(0.5);
+    -webkit-backdrop-filter: blur(10px);
+    transition: top 200ms ease-in-out;
+  }
+  
+  .card:focus .card__details,
+  .card:focus-within .card__details {
+    top: 0;
+  }
+  
+  @supports not (backdrop-filter: none) {
+      .card:focus .card__image,
+    .card:focus-within .card__image {
+      filter: brightness(0.2);
+    }
+  }
