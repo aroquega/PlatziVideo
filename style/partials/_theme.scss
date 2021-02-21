@@ -1,0 +1,40 @@
+.colors {
+    --cerise: #db3069;
+    --sandstorm: #f5d547;
+    --cyber-yellow: #ffd000;
+    --eggshell: #ebebd3;
+    --black-olive: #3c3c3b;
+    --transparent-black: rgba(0.5, 0.5, 0.5, 0.2);
+    --red: #ea4335ff;
+    --blue: #1d9bf0ff;
+}
+
+.concepts {
+    --primary-brand-color: var(--cerise);
+    --secondary-brand-color: var(--sandstorm);
+    --secondary-color-dark: var(--cyber-yellow);
+    --light-color: var(--eggshell);
+    --dark-color: var(--black-olive);
+}
+
+.entities {
+    --header-bg: var(--primary-brand-color);
+    --header-color: var(--light-color); 
+    --footer-bg: var(--dark-color);
+    --footer-color: var(--light-color);
+    --link-color: var(--secondary-brand-color);
+    --link-visited-color: var(--secondary-color-dark);
+    --shadow-color: var(--transparent-black);
+    --input-border-color: var(--dark-color);
+    --input-color: var(--dark-color);
+    --input-focus-border-color: var(--primary-brand-color);
+    --input-bg-color: var(--light-color);
+    --label-focus-color: var(--primary-brand-color);
+    --main-color: var(--light-color);
+    --button-bg-color: white;
+    --button-border-color: var(--primary-brand-color);
+    --button-color: var(--primary-brand-color);
+
+    --medium-shadow: 0 2.5px 10px var(--shadow-color);
+    --border-radius: 4px;
+}

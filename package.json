@@ -1,0 +1,20 @@
+{
+  "name": "platzivideo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-styles": "sass --watch style/main.scss style/main.css",
+    "compile-styles": "sass --style compressed styles/main.scss styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aroquega/PlatziVideo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aroquega/PlatziVideo/issues"
+  },
+  "homepage": "https://github.com/aroquega/PlatziVideo#readme"
+}
