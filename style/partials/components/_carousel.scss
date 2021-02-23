@@ -1,10 +1,25 @@
 .carousel {
     display: flex;
-    width: 100%;
-    margin: 20px 0;
-    overflow: auto;
+    margin: 20px -20px;
+    overflow-x: auto;
     background-color: var(--light-color);
-  }
+    filter: brightness(0.95);
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-brand-color) transparent;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-brand-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
   
   .carousel__container {
     display: flex;
