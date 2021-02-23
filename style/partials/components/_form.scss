@@ -32,6 +32,11 @@ Form Style
     color: var(--input-color);
 }
 
+.text-field--with-trailing-content .text-field__input {
+    border-right: none;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
 .text-field__trailing-content {
     display: flex;
     align-items: center;
