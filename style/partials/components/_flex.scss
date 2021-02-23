@@ -1,6 +1,11 @@
 .center {
     margin: 10px;
+    padding: 20px 10px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+
+.center__stretch {
+    align-self: stretch;
 }
