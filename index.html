@@ -9,9 +9,11 @@
 </head>
 <body class="container colors concepts entities">
   <header class="main-header u-elevated">
-    <img class="main-header__logo"
-      src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png"
-      alt="platzi-video">
+    <div class="main-header__logo">
+      <img class="contained_image"
+          src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png"
+          alt="platzi-video">
+    </div>
     <div class="main-header__actions">
       <div class="overflow-menu">
         <button type="button" class="button">
@@ -30,11 +32,11 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="main-content">
     <section class="center">
-      <h1 class="title">¿Qué quieres buscar hoy?</h1>
-      <form>
-        <div class="text-field text-field--no-label">
+      <h1 class="title centered-text">¿Qué quieres buscar hoy?</h1>
+      <form class="center__stretch">
+        <div class="text-field text-field--no-label text-field--with-trailing-content">
           <input class="text-field__input" placeholder="Buscar">
           <div class="text-field__trailing-content">
             <button type="submit" class="button">
