@@ -8,12 +8,26 @@ Main Header Component
     justify-content: space-between;
     align-items: center;
     min-height: 80px;
-    max-height: 100px;
+    height: 100px;
     padding: 10px;
     background-color: var(--header-bg);
     box-shadow: var(--medium-shadow);
+    z-index: 1;
 }
 
 .main-header__logo {
+    max-height: 100%;
+    flex-basis: 120px;
+}
+
+.main-header__actions {
+}
+
+.block {
+    display: block;
+}
+
+.contained_image {
+    width: 100%;
     height: 100%;
 }
