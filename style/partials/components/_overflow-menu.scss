@@ -3,22 +3,21 @@ Overflow Menu
 */
 
 .overflow-menu {
-    position: relative;
-    height: auto;
-  }
-  
-  .overflow-menu__content {
-    position: absolute;
-    right: 0;
-    top: 100%;
-    bottom: 0;
-    min-width: 170px;
-    background-color: var(--dark-color);
-    box-shadow: var(--box-shadow);
-    overflow: hidden;
-    transition: bottom 0.2s ease-in-out;
-  }
-  
-  .overflow-menu:hover > .overflow-menu__content {
-    bottom: initial;
-  }
+  position: relative;
+  height: auto;
+}
+
+.overflow-menu__content {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  min-width: 170px;
+  box-shadow: var(--medium-shadow);
+  overflow: hidden;
+  transition: bottom 0.2s ease-in-out;
+}
+
+.overflow-menu:hover > .overflow-menu__content {
+  bottom: initial;
+}
