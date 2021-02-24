@@ -1,6 +1,5 @@
 .link {
-    display: block;
-    padding: 10px 20px;
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -22,6 +21,8 @@
 }
 
 .link--menu {
+    width: 100%;
+    padding: 10px 20px;
     background-color: var(--dark-color);
 }
 
